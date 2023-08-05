@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/images/logo.svg" alt="snap" />
+        </div>
+        <div class="menu hidden">
+          <ul class="menu-left">
+            <li class="dropdown" id="features">
+              <div class="features">
+                <a href="#">Features</a>
+                <img src="/images/icon-arrow-down.svg" open alt="" />
+              </div>
+              <div class="list features-list hidden">
+                <div class="link">
+                  <img src="/images/icon-todo.svg" alt="" />
+                  <a href="#">Todo List</a>
+                </div>
+                <div class="link">
+                  <img src="/images/icon-calendar.svg" alt="" />
+                  <a href="#">Calendar</a>
+                </div>
+                <div class="link">
+                  <img src="/images/icon-reminders.svg" alt="" />
+                  <a href="#">Reminders</a>
+                </div>
+                <div class="link">
+                  <img src="/images/icon-planning.svg" alt="" />
+                  <a href="#">Planning</a>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown start" id="company">
+              <div class="company">
+                <a href="#">Company</a>
+                <img src="/images/icon-arrow-down.svg" open alt="" />
+              </div>
+              <div class="list company-list hidden">
+                <div class="link">
+                  <a href="#">History</a>
+                </div>
+                <div class="link">
+                  <a href="#">Our Team</a>
+                </div>
+                <div class="link">
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+
+          <ul class="menu-right">
+            <li><a href="#">Login</a></li>
+            <li><a href="#" class="btn btn-outline">Register</a></li>
+          </ul>
+        </div>
+        <div class="hamburger"></div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="mobile-hero">
+        <img src="/images/image-hero-mobile.png" alt="" />
+      </div>
+      <div class="hero">
+        <h1 class="brand">Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn btn-dark">Learn more</button>
+        <div class="logos">
+          <img src="/images/client-databiz.svg" alt="" />
+          <img src="/images/client-audiophile.svg" alt="" />
+          <img src="/images/client-meet.svg" alt="" />
+          <img src="/images/client-maker.svg" alt="" />
+        </div>
+      </div>
+      <div class="image-hero">
+        <img src="/images/image-hero-desktop.png" alt="" />
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
